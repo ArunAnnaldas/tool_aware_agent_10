@@ -1,4 +1,4 @@
-# 🛠 Module 6 — Tool-Aware Agent (LangChain + OpenAI)
+# 🛠 Tool-Aware Agent (LangChain + OpenAI)
 
 This project demonstrates how to build a LangChain agent that can use external tools as part of its reasoning process. This agent uses a calculator tool and performs reasoning with tools using `ReAct` strategy.
 

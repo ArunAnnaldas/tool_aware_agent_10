@@ -1,0 +1,21 @@
+(base) dummyUser@dummyUsers-MacBook-Air 10_tool_aware_agent % python main.py
+/Users/dummyUser/Documents/Learning/AgenticAI/10_tool_aware_agent/main.py:13: LangChainDeprecationWarning: LangChain agents will continue to be supported, but it is recommended for new use cases to be built with LangGraph. LangGraph offers a more flexible and full-featured framework for building agents, including support for tool-calling, persistence of state, and human-in-the-loop workflows. For details, refer to the `LangGraph documentation <https://langchain-ai.github.io/langgraph/>`_ as well as guides for `Migrating from AgentExecutor <https://python.langchain.com/docs/how_to/migrate_agent/>`_ and LangGraph's `Pre-built ReAct agent <https://langchain-ai.github.io/langgraph/how-tos/create-react-agent/>`_.
+  agent = initialize_agent(
+User Query: What is 20% of the average of 3, 7, and 11?
+/Users/dummyUser/Documents/Learning/AgenticAI/10_tool_aware_agent/main.py:24: LangChainDeprecationWarning: The method `Chain.run` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use :meth:`~invoke` instead.
+  result = agent.run(user_query)
+
+
+> Entering new AgentExecutor chain...
+We need to find the average of 3, 7, and 11 first, then calculate 20% of that average.
+Action: calculator_tool
+Action Input: (3+7+11)/3
+Observation: The result is 7.0
+Thought:Now that we have the average, we can calculate 20% of it.
+Action: calculator_tool
+Action Input: 0.2*7
+Observation: The result is 1.4000000000000001
+Thought:I now know the final answer
+Final Answer: 1.4
+
+> Finished chain.
